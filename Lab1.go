@@ -1,3 +1,11 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
 fmt.Println("Hello World")
 	//var c1=0
 	//c1 := 0
@@ -14,8 +22,10 @@ fmt.Println("Hello World")
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Println(c)
-	
-	c1,err= fmt.Scan()
-	if (err)
+
+	c1,err := fmt.Scan()
+	fmt.Println(err)
 		
 	fmt.Println(c1)
+	
+	}
