@@ -18,9 +18,7 @@ func helper1(){
 		defer add(i)
 		fmt.Println("cccc",i)
 	}
-	add(1)
-	add(2)
-	add(3)
+	
 }
 
 
@@ -28,3 +26,4 @@ func main() {
 
 	helper1()
 }
+
