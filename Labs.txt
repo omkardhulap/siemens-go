@@ -12,3 +12,30 @@ Use Os.Args to print all the command line arguments and print sum of string leng
 Len(..)
 
 Check OS documentation to print the name of current executable.
+
+
+Lab 3 -  (same file)
+func add(x int, y int) int {
+	return x + y
+}
+func add(x, y int) int {
+	return x + y
+}
+Create a go file to create two functions add and divide
+Invoke those functions from main method
+
+Lab 4 - 
+Create two go files (same package)
+  Helper.go – add, divide
+  Lab.go – main to invoke add and divide
+  Run lab.go 
+    See undefined error
+  Run
+  Go run lab.go helper.go
+ 
+Lab 5 -
+
+  
+
+
+
