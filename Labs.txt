@@ -1,3 +1,20 @@
+Assginments - 
+folder tmp
+   package empmgr
+     create struct Emp (emp.go)
+		type Emp struct {
+			Empno  int
+			Ename  string
+			Salary float64
+		}
+	 create file(empmgr.go)	
+	 
+	    create (emp)
+		-> show a message 
+		
+	  	
+
+
 Lab 1 - 
 Create demo1.go 
 Compile/Run
