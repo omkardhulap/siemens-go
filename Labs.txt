@@ -11,4 +11,4 @@ Lab 2 -
 Use Os.Args to print all the command line arguments and print sum of string length of all the arguments
 Len(..)
 
-Check OS documentation to print the same of current executable.
+Check OS documentation to print the name of current executable.
