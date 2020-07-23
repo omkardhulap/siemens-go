@@ -4,12 +4,17 @@ import (
 	"fmt"
 )
 
-func shift(v Vertex) Vertex {
+func (v *Vertex) shift() {
+	v.X += 10
+	v.Y += 10
+}
+
+/*func shift(v Vertex) Vertex {
 	v.X += 10
 	v.Y += 10
 	return v
 }
-
+*/
 type Vertex struct {
 	X int
 	Y int
@@ -23,6 +28,7 @@ func main() {
 	no, err := fmt.Scanf("%d%d", &v.X, &v.Y)
 	fmt.Println("Current Value of v ", v)
 	fmt.Println(no, "  ", err)
-	v1 := shift(v)
-	fmt.Println(v1)
+	//	v1 := shift(v)
+	v.shift()
+	fmt.Println(v)
 }
