@@ -34,6 +34,34 @@ Create two go files (same package)
   Go run lab.go helper.go
  
 Lab 5 -
+	Write a calc method to return addition, subtraction 
+	func swap(x, y string) (string, string) {
+		return y, x
+	}
+Lab 6 - Named Parameters
+func split(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+	return
+}
+Write a function to return all calculations like +,-, *, /
+
+Lab 7 -
+	Create a calc.go file with different package(simple) and write these two functions in the same
+	Invoke from main.main method
+		import, simple.add
+	Run - observe error
+		(on gopath...)
+	create a folder c:\siemensGo\src\simple
+		copy calc.go in simple folder
+	Run - observe error
+		(on not exported...)
+	Change method names to start with capital alpha (add->Add)
+	
+
+
+
+
 
   
 
