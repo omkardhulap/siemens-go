@@ -1,0 +1,10 @@
+Lab 1 - 
+Create demo1.go 
+Compile/Run
+Check go fmt for demo1.go
+Modify package name and watch error message
+Modify main method signature
+Go doc fmt.println
+Check golang.org documentation
+
+
