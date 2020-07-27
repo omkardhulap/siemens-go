@@ -33,8 +33,17 @@ func widraw() {
 	fmt.Println("Widraw Current Total =", total)
 }
 func main() {
-	go deposit()
-	go widraw()
-	for {
-	}
+	var wg sync.WaitGroup
+	wg.Add(2)
+	go func() {
+		deposit()
+		wg.Done()
+	}()
+	go func() {
+		widraw()
+		wg.Done()
+	}()
+	fmt.Println("before wait...")
+	wg.Wait()
+	fmt.Println("in main after deposit and widraw ")
 }
