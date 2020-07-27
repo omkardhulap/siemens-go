@@ -7,7 +7,7 @@ import (
 )
 
 var total = 0
-var mux sync.Mutex
+var mux = &sync.Mutex{}
 
 func deposit() {
 
