@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>jQuery Hello World</title>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+ $("#msgid").html("This is Hello World by JQuery");
+ $.post("http://localhost:8080/emp",
+    {"empno" :11,"ename":"AAA","salary":22111.11},
+    function(data, textStatus, jqXHR)
+    {
+        alert("sent to server")
+    }).fail(function(jqXHR, textStatus, errorThrown) 
+    {
+        alert(textStatus);
+    });
+
+});
+
+</script>
+
+This is Hello World by HTML
+
+<div id="msgid">
+</div>
+
+</body>
+</html>
+
+
+ 
+//With jqXHR callbacks .done() and .fail()
+$.post("AJAX_POST_URL",
+    {username:"ravi",pass:"124",submit:true}).done(function(data, textStatus, jqXHR) 
+        {
+ 
+        }).fail(function(jqXHR, textStatus, errorThrown) 
+    {
+        alert(textStatus);
+    });
