@@ -2,14 +2,24 @@ package main
 
 import (
 	"fmt"
-	"io"
+	"io/ioutil"
 	"log"
 	"net/http"
 )
 
+func loadPage(title string) (*[]byte, error) {
+	fmt.Println(title)
+	body, err := ioutil.ReadFile(title)
+	if err != nil {
+		return nil, err
+	}
+	return &body, nil
+}
+
 func process() {
 	helloHandler := func(w http.ResponseWriter, req *http.Request) {
-		io.WriteString(w, "<h1>Main Page</h1>")
+		body, _ := loadPage("post.html")
+		fmt.Fprintln(w, string(*body))
 	}
 	http.HandleFunc("/", helloHandler)
 	http.HandleFunc("/emp", Emphandler)
