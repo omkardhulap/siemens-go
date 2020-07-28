@@ -1,0 +1,12 @@
+go test [names of go files]
+
+go test -v
+
+go test -cover
+
+go test -coverprofile tmp.txt
+
+go tool cover -html=tmp.txt -o tmp.html
+
+divide (s String, s String) integer 
+
