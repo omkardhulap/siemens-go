@@ -8,5 +8,7 @@ go test -coverprofile tmp.txt
 
 go tool cover -html=tmp.txt -o tmp.html
 
+go test  -bench=.
+
 divide (s String, s String) integer 
 
