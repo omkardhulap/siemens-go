@@ -1,0 +1,3 @@
+aws dynamodb get-item \
+    --table-name MusicCollection \
+    --key file://key.json
